@@ -4,4 +4,21 @@
   padding: 20px;
   max-width: 1720px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-navbar-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--primary-gray-color);
+}
+
+.header-navbar-link {
+  text-decoration: none;
+  color: var(--primary-gray-color);
+  font-family: var(--font-mulish);
 }
