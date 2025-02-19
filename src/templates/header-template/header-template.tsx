@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Images } from "../../assets/media";
+import { NAVBAR_ITEMS } from "../../common/constants";
 import styles from "./header-template.module.css";
 
 export const HeaderTemplate = () => {
@@ -8,21 +9,15 @@ export const HeaderTemplate = () => {
       <img src={Images.Logo} alt="technologycal logo" />
 
       <nav className={styles["header-navbar-wrapper"]}>
-        <Link className={styles["header-navbar-link"]} to="/">
-          Home
-        </Link>
-        <Link className={styles["header-navbar-link"]} to="/features">
-          Features
-        </Link>
-        <Link className={styles["header-navbar-link"]} to="/resources">
-          Resources
-        </Link>
-        <Link className={styles["header-navbar-link"]} to="/pricing">
-          Pricing
-        </Link>
-        <Link className={styles["header-navbar-link"]} to="/blog">
-          Blog
-        </Link>
+        {NAVBAR_ITEMS.map((item) => (
+          <Link
+            key={item.id}
+            className={styles["header-navbar-link"]}
+            to={item.path}
+          >
+            {item.label}
+          </Link>
+        ))}
       </nav>
     </header>
   );
