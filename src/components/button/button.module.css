@@ -1,0 +1,46 @@
+.variant-primary {
+  background-color: var(--primary-gray-color);
+  border: none;
+}
+
+.variant-secondary {
+  background-color: var(--primary-blue);
+  border: none;
+}
+
+.variant-transparent {
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+}
+
+.button-general {
+  height: 65px;
+  border-radius: 9999px;
+  font-family: var(--font-mulish);
+  font-weight: 500;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+.size-small {
+  width: 142px;
+  font-size: 18px;
+}
+
+.size-medium {
+  width: 220px;
+  font-size: 20px;
+}
+
+.size-large {
+  width: 295px;
+  font-size: 22px;
+}
+
+/* HOVER STATES  */
+.variant-transparent:hover {
+  background-color: var(--primary-blue);
+  color: white;
+}

@@ -1,7 +1,7 @@
 .header-main-wrapper {
   width: 100%;
   height: 70px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   max-width: 1720px;
   margin: 0 auto;
   display: flex;
@@ -13,7 +13,8 @@
   flex: 1;
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
+  gap: 40px;
   color: var(--primary-gray-color);
 }
 
@@ -21,6 +22,8 @@
   text-decoration: none;
   color: var(--primary-gray-color);
   font-family: var(--font-mulish);
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .header-cart-icon-container {
@@ -31,4 +34,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+}
+
+/* cta is call to action */
+.cta-header-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
