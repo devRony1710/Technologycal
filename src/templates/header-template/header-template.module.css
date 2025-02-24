@@ -22,3 +22,13 @@
   color: var(--primary-gray-color);
   font-family: var(--font-mulish);
 }
+
+.header-cart-icon-container {
+  background-color: var(--primary-blue);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

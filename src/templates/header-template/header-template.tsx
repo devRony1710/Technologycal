@@ -1,3 +1,4 @@
+import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Images } from "../../assets/media";
 import { NAVBAR_ITEMS } from "../../common/constants";
@@ -19,6 +20,10 @@ export const HeaderTemplate = () => {
           </Link>
         ))}
       </nav>
+
+      <div className={styles["header-cart-icon-container"]}>
+        <ShoppingCart color="white" />
+      </div>
     </header>
   );
 };
